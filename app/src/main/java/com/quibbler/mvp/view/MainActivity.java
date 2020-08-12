@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements IView {
     private void initView() {
         mTextView = findViewById(R.id.text);
         mPresenter.subscribe(this);
-        mPresenter.getMessage();
     }
 
     @UiThread

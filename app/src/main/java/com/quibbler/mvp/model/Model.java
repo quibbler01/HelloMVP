@@ -23,6 +23,7 @@ public class Model implements IModel {
 
     @WorkerThread
     private String getMessageFromServer() {
-        return "Hello World!\n" + dateFormat.format(mCalendar.getTime());
+        mCalendar.setTimeInMillis(System.currentTimeMillis());
+        return "Hello World!\n\n\n" + dateFormat.format(mCalendar.getTime());
     }
 }
